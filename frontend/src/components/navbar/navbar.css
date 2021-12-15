@@ -1,0 +1,61 @@
+.navbar {
+    width: 100px;
+    border-right: 1px solid var(--border-color);
+}
+
+.navbar__group {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar__group-item-logo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.navbar__group-logo {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.navbar__group-logo-icon {
+    font-size: 38px !important;
+}
+
+.navbar__group-chats-item {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar__group-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 0 20px;
+}
+
+.navbar__group-item>a {
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__group-item a:not(.active):hover, .navbar__group-item-logo a:hover {
+    background: var(--hover-color);
+}
+
+.navbar__group-icon {
+    color: var(--text-color);
+}

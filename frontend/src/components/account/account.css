@@ -1,0 +1,244 @@
+.account {
+  width: 350px;
+}
+
+.account-header {
+  height: 80px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.account-header__text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.account-header__close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  padding: 9px 14px;
+}
+
+.account-header__close-btn-icon {
+  color: #fd397a !important;
+  font-size: 1rem !important;
+}
+
+.account-body__user,
+.account-body__user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-body__user-avatar {
+  height: 6.1rem;
+  width: 6.1rem;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.account-body__user--edit-avatar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #36404a;
+}
+
+.account-body__user--edit-avatar-icon {
+  font-size: 1rem !important;
+  color: var(--text-color) !important;
+}
+
+.account-body__user-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.account-body__user-info h5 {
+  font-size: 20px;
+  padding-bottom: 8px;
+  font-weight: 500;
+}
+
+.account-body__user-info small {
+  font-style: italic;
+  font-size: 80%;
+  color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 48px;
+}
+
+.account-body__user-about {
+  padding: 0 30px 30px;
+  line-height: 1.3rem;
+  font-size: 15px;
+}
+
+.account-body__card-container {
+  padding: 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+.account-body__card {
+  margin-bottom: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.account-body__card-header {
+  display: flex;
+  align-items: center;
+  padding: 11px 16px;
+  background-color: #36404a;
+  justify-content: space-between;
+}
+
+.account-body__card-header:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+.account-body__card-header-left-icon {
+  font-size: 1.3rem !important;
+}
+
+.account-body__card-header-text {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.account-body__card-header-right-icon {
+  font-size: 14px !important;
+}
+
+.account-body__card-body {
+  position: relative;
+  background-color: #262e35;
+  /* padding: 20px; */
+  /* animation: slideDown 1s forwards; */
+  transition: all 1s linear;
+  display: block;
+  height: 280px;
+  overflow: hidden;
+}
+
+.account-body__card-body:not(.show) {
+  /* animation: slideUp 1s forwards; */
+  /* display: none; */
+  height: 0;
+}
+
+.account-body__card-body:not(.show) .card-body__item {
+  visibility: hidden;
+  transition: all 1s linear;
+}
+
+.card-body__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.card-body__btn span {
+  display: block;
+  color: var(--text-color);
+  padding-left: 6px;
+}
+
+.card-body__btn-icon {
+  color: var(--text-color) !important;
+  font-size: 14px !important;
+}
+
+.card-body__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 12px 20px;
+}
+
+.card-body__item:first-child {
+  padding-top: 20px;
+}
+
+.card-body__item span {
+  font-size: 15px;
+  padding-bottom: 8px;
+}
+
+.card-body__item h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-body__attached {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #36404a;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.card-body__attached:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.card-body__attached-img {
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  background-color: rgba(114, 105, 239, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.card-body__attached-info {
+  width: 100%;
+  margin: 0 12px;
+  min-width: 0;
+}
+
+.card-body__attached-info h5 {
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+}
+
+.card-body__attached-btn-group {
+  display: flex;
+  align-items: center;
+}
+
+.card-body__attached-btn-group button {
+  background-color: transparent;
+}
+
+.card-body__attached-btn-group button:last-child {
+  margin-left: 8px;
+}
+
+.card-body__attached-btn-icon {
+  color: var(--text-color);
+}

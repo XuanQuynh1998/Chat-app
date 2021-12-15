@@ -1,0 +1,7 @@
+.sidebar-body-item__active {
+  background-color: var(--select-color);
+}
+
+.sidebar-body-item__active .sidebar-body__item:hover {
+  background-color: var(--select-color);
+}

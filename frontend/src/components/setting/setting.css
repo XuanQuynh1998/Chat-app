@@ -1,0 +1,311 @@
+.setting {
+  width: 350px;
+}
+
+.setting-header {
+  height: 80px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setting-header__text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.setting-header__close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  padding: 9px 14px;
+}
+
+.setting-header__close-btn-icon {
+  color: #fd397a !important;
+  font-size: 1rem !important;
+}
+
+.setting-body__user {
+  padding-bottom: 32px;
+}
+
+.setting-body__user,
+.setting-body__user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.setting-body__user-avatar {
+  height: 6.1rem;
+  width: 6.1rem;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.setting-body__user--edit-avatar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #36404a;
+}
+
+.setting-body__user--edit-avatar-icon {
+  font-size: 1rem !important;
+  color: var(--text-color) !important;
+}
+
+.setting-body__user-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.setting-body__user-info h5 {
+  font-size: 20px;
+  padding-bottom: 8px;
+  font-weight: 500;
+}
+
+.setting-body__user-info small {
+  font-style: italic;
+  font-size: 80%;
+  color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 48px;
+}
+
+.setting-body__user-state {
+  position: relative;
+}
+
+.setting-body__user-current-state {
+  display: flex;
+  align-items: center;
+}
+
+.setting-body__user-current-state,
+.setting-body__user-list-state button {
+  background-color: transparent;
+  color: #9aa1b9;
+  font-size: 15px;
+}
+
+.setting-body__user-current-state-icon {
+  padding-left: 6px;
+}
+
+.setting-body__user-list-state {
+  position: absolute;
+  top: 30px;
+  min-width: 10rem;
+  background-color: #36404a;
+  padding: 0.5rem 0;
+  border: 1px solid #3e4851;
+  border-radius: 3px;
+}
+
+.setting-body__user-list-state:not(.show) {
+  display: none;
+}
+
+.setting-body__user-list-state button {
+  width: 100%;
+  padding: 0.35rem 1.5rem;
+  text-align: left;
+}
+
+.setting-body__user-list-state button:hover {
+  background-color: var(--hover-color);
+}
+
+.setting-body__card-container {
+  padding: 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+.setting-body__card {
+  margin-bottom: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.setting-body__card-header {
+  display: flex;
+  align-items: center;
+  padding: 11px 16px;
+  background-color: #36404a;
+  justify-content: space-between;
+}
+
+.setting-body__card-header:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+.setting-body__card-header-left-icon {
+  font-size: 1.3rem !important;
+}
+
+.setting-body__card-header-text {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.setting-body__card-header-right-icon {
+  font-size: 14px !important;
+}
+
+.setting-body__card-body {
+  position: relative;
+  background-color: #262e35;
+  transition: all 1s linear;
+  max-height: 280px;
+  /* overflow: hidden; */
+}
+
+.setting-body__card-body:not(.show) {
+  transition: all 1s linear;
+  max-height: 0;
+  visibility: hidden;
+}
+
+.setting-body__card-body:not(.show) div {
+  visibility: hidden;
+  transition: all 1s linear;
+}
+
+.card-body__item a:not(:first-child) {
+  padding-top: 1rem;
+}
+
+.card-body__item a:not(:last-child) {
+  border-bottom: 1px solid #36404a;
+  padding-bottom: 1rem;
+}
+
+.card-body__item-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 12px 20px;
+}
+
+.card-body__item-row:first-child {
+  padding-top: 20px;
+}
+
+.card-body__item-select {
+  position: relative;
+}
+
+.card-body__item-current-select {
+  display: flex;
+  align-items: center;
+  background: #36404a;
+  color: var(--text-color);
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+.card-body__item-current-select span {
+  padding-right: 14px;
+}
+
+.card-body__item-current-select-icon {
+  font-size: 1.3rem !important;
+  position: absolute;
+  right: 0;
+  margin-right: 4px;
+}
+
+.card-body__item-list-select {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 8.5rem;
+  background-color: #36404a;
+  padding: 0.5rem 0;
+  border: 1px solid #3e4851;
+  border-radius: 3px;
+  z-index: 10;
+}
+
+.card-body__item-list-select:not(.show) {
+  display: none;
+}
+
+.card-body__item-list-select button {
+  background-color: transparent;
+  color: var(--text-color);
+  text-align: left;
+  font-size: 14px;
+  width: 100%;
+  padding: 0.35rem 1.5rem;
+}
+
+.card-body__item-list-select button:hover {
+  background-color: var(--hover-color);
+}
+
+.card-body__item-custom-checkbox {
+  position: relative;
+  width: 2rem;
+  height: 1rem;
+  border-radius: 12px;
+  background-color: transparent;
+  border: 1px solid #7269ef;
+  transition: all 0.15s ease-in-out;
+}
+
+.card-body__item-custom-checkbox label {
+  position: absolute;
+  width: 2rem;
+  height: 1rem;
+  z-index: 10;
+}
+
+#card-body__item-last-seen-checkbox,
+#card-body__item-read-receipts-checkbox,
+#card-body__item-security-checkbox {
+  display: none;
+}
+
+#card-body__item-last-seen-checkbox:checked + .card-body__item-last-seen-checkbox-icon,
+#card-body__item-read-receipts-checkbox:checked + .card-body__item-read-receipts-checkbox-icon,
+#card-body__item-security-checkbox:checked + .card-body__item-security-checkbox-icon {
+  transform: translateX(calc(1rem + 1px));
+  transition: transform 0.15s ease-in-out;
+}
+
+#card-body__item-last-seen-checkbox:not(:checked) + .card-body__item-last-seen-checkbox-icon,
+#card-body__item-read-receipts-checkbox:not(:checked)
+  + .card-body__item-read-receipts-checkbox-icon,
+#card-body__item-security-checkbox:not(:checked) + .card-body__item-security-checkbox-icon {
+  transform: translateX(0);
+  transition: transform 0.15s ease-in-out;
+  background-color: transparent;
+}
+
+.card-body__item-checkbox-icon {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  font-size: 12px !important;
+  transition: transform 0.15s ease-in-out;
+}
